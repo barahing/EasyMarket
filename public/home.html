@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<title>EasyMarket</title>
+		<link rel="stylesheet" href="/css/home.css">
+</head>
+<header>
+	<div id="home-header">
+		<div id="header-left">
+			<img id="logotipo" src="logo.png" alt="Logotipo">
+			<h4 id="header-text">EasyMarket</h4>
+		</div>
+		<div id="header-center">
+			<select class="form-select" id="category-select" aria-label="Default select example">
+				<option selected>Categorías</option>
+				<option value="1">Celulares</option>
+				<option value="2">Accesorios Celulares</option>
+				<option value="3">PC de escritorio</option>
+				<option value="4">Portátiles</option>
+				<option value="5">Accesorios para PC</option>
+			</select>
+			<input type="search" class="form-control" id="search" placeholder="Encuentra algo">
+			<img id="search-image" src="/img/search.svg" alt="Search">
+		</div>
+		<div id="header-right">
+			<button id="help-button" type="button" class="btn btn-secondary">Help</button>
+			<button id="account-button" onclick="location.href = 'usergestion-create.html'">
+				<img src="/img/person.svg" alt="Search">
+				Cuenta
+			</button>
+			<button id="kart-button">
+				<img src="/img/bag.svg" alt="Search">
+				Shopping
+			</button>
+			<button id="pay-button" onclick="location.href = 'shoppingcart.html'">
+				<img src="/img/cart3.svg" alt="Search">
+				Pagar
+			</button>
+			<p id="cart-count"></p>
+		</div>
+	</div>
+	<div class="category-header">
+		<a href="#">Celulares</a>
+		<a href="#">Accesorios Celulares</a>
+		<a href="#">PCs de escritorio</a>
+		<a href="#">Portátiles</a>
+		<a href="#">Accesorios para PC</a>
+		<a href="#">Novedades!</a>
+		<a href="#">Promos para ti!</a>
+	</div>
+</header>
+
+<body>
+
+	<div id="category-cards">
+		<div class="category-card">
+			<div class="first-content">
+				<span>
+					<img id="category-image" src="https://cdn.pixabay.com/photo/2023/06/18/21/52/ai-generated-8072823_1280.jpg" alt="Tomado de pixabay">
+				</span>
+			</div>
+			<div class="second-content">
+				<span>Celulares y accesorios</span>
+			</div>
+		</div>
+
+		<div class="category-card">
+			<div class="first-content">
+				<span>
+					<img id="category-image" src="https://cdn.pixabay.com/photo/2017/01/28/19/06/label-2016248_1280.png" alt="Tomado de pixabay">
+				</span>
+			</div>
+			<div class="second-content">
+				<span>Promos para ti!</span>
+			</div>
+		</div>
+
+		<div class="category-card">
+			<div class="first-content">
+				<span>
+					<img id="category-image" src="https://cdn.pixabay.com/photo/2023/05/29/18/07/data-center-8026801_1280.png" alt="Tomado de pixabay">
+				</span>
+			</div>
+			<div class="second-content">
+				<span>Tecnología, Portátiles y mucho más!</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="products-grid">
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://www.pngplay.com/wp-content/uploads/12/Macbook-Transparent-PNG.png">
+			<p class="product-name">MacBook Air de 13 pulgadas</p>
+			<p class="product-description">Chip M1 de Apple con CPU de ocho núcleos y GPU de siete núcleos</p>
+			<p class="product-prize">$ 4.799.000 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://itechcolombia.co/wp-content/uploads/2022/10/261987_ys8mqf.png">
+			<p class="product-name">iPhone 14 Pro Max 256 GB Morado Oscuro</p>
+			<p class="product-description">El iPhone 14 Pro Max es el iPhone más grande y poderoso de la serie</p>
+			<p class="product-prize">$ 5.399.000 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://www.hp.com/content/dam/sites/worldwide/personal-computers/commercial/laptops/premium-high-performance-laptops/27_AIO-27-white.png">
+			<p class="product-name">Todo en Uno HP</p>
+			<p class="product-description">Procesador Celeron® Windows 11 Home - Unidad de estado sólido PCIe® NVMe™ M.2 de 256 GB</p>
+			<p class="product-prize">$ 1.399.000 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://mediaserver.goepson.com/ImConvServlet/imconv/32c29f9d0b3bdd0291a47d17830f0681ef33be7b/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_02">
+			<p class="product-name">Impresora </p>
+			<p class="product-description">Ecotank L3250 Mfp <br>Color Wifi <br>C11cj67301</p>
+			<p class="product-prize">$ 782.999 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://www.pngplay.com/wp-content/uploads/12/Macbook-Transparent-PNG.png">
+			<p class="product-name">MacBook Air de 13 pulgadas</p>
+			<p class="product-description">Chip M1 de Apple con CPU de ocho núcleos y GPU de siete núcleos</p>
+			<p class="product-prize">$ 4.799.000 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://itechcolombia.co/wp-content/uploads/2022/10/261987_ys8mqf.png">
+			<p class="product-name">iPhone 14 Pro Max 256 GB Morado Oscuro</p>
+			<p class="product-description">El iPhone 14 Pro Max es el iPhone más grande y poderoso de la serie</p>
+			<p class="product-prize">$ 5.399.000 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://www.hp.com/content/dam/sites/worldwide/personal-computers/commercial/laptops/premium-high-performance-laptops/27_AIO-27-white.png">
+			<p class="product-name">Todo en Uno HP</p>
+			<p class="product-description">Procesador Celeron® Windows 11 Home - Unidad de estado sólido PCIe® NVMe™ M.2 de 256 GB</p>
+			<p class="product-prize">$ 1.399.000 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://mediaserver.goepson.com/ImConvServlet/imconv/32c29f9d0b3bdd0291a47d17830f0681ef33be7b/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_02">
+			<p class="product-name">Impresora </p>
+			<p class="product-description">Ecotank L3250 Mfp <br>Color Wifi <br>C11cj67301</p>
+			<p class="product-prize">$ 782.999 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://www.pngplay.com/wp-content/uploads/12/Macbook-Transparent-PNG.png">
+			<p class="product-name">MacBook Air de 13 pulgadas</p>
+			<p class="product-description">Chip M1 de Apple con CPU de ocho núcleos y GPU de siete núcleos</p>
+			<p class="product-prize">$ 4.799.000 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://itechcolombia.co/wp-content/uploads/2022/10/261987_ys8mqf.png">
+			<p class="product-name">iPhone 14 Pro Max 256 GB Morado Oscuro</p>
+			<p class="product-description">El iPhone 14 Pro Max es el iPhone más grande y poderoso de la serie</p>
+			<p class="product-prize">$ 5.399.000 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://www.hp.com/content/dam/sites/worldwide/personal-computers/commercial/laptops/premium-high-performance-laptops/27_AIO-27-white.png">
+			<p class="product-name">Todo en Uno HP</p>
+			<p class="product-description">Procesador Celeron® Windows 11 Home - Unidad de estado sólido PCIe® NVMe™ M.2 de 256 GB</p>
+			<p class="product-prize">$ 1.399.000 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://mediaserver.goepson.com/ImConvServlet/imconv/32c29f9d0b3bdd0291a47d17830f0681ef33be7b/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_02">
+			<p class="product-name">Impresora </p>
+			<p class="product-description">Ecotank L3250 Mfp <br>Color Wifi <br>C11cj67301</p>
+			<p class="product-prize">$ 782.999 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://www.pngplay.com/wp-content/uploads/12/Macbook-Transparent-PNG.png">
+			<p class="product-name">MacBook Air de 13 pulgadas</p>
+			<p class="product-description">Chip M1 de Apple con CPU de ocho núcleos y GPU de siete núcleos</p>
+			<p class="product-prize">$ 4.799.000 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://itechcolombia.co/wp-content/uploads/2022/10/261987_ys8mqf.png">
+			<p class="product-name">iPhone 14 Pro Max 256 GB Morado Oscuro</p>
+			<p class="product-description">El iPhone 14 Pro Max es el iPhone más grande y poderoso de la serie</p>
+			<p class="product-prize">$ 5.399.000 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://www.hp.com/content/dam/sites/worldwide/personal-computers/commercial/laptops/premium-high-performance-laptops/27_AIO-27-white.png">
+			<p class="product-name">Todo en Uno HP</p>
+			<p class="product-description">Procesador Celeron® Windows 11 Home - Unidad de estado sólido PCIe® NVMe™ M.2 de 256 GB</p>
+			<p class="product-prize">$ 1.399.000 COP</p>
+		</div>
+	</div>
+	<div class="product-card">
+		<div class="card-content">
+			<div class="card-header">
+				<img class="cart-icon" src="/img/cart-plus.svg">
+				<img class="heart-icon" src="/img/heart.svg">		
+			</div>
+			<img src="https://mediaserver.goepson.com/ImConvServlet/imconv/32c29f9d0b3bdd0291a47d17830f0681ef33be7b/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_02">
+			<p class="product-name">Impresora </p>
+			<p class="product-description">Ecotank L3250 Mfp <br>Color Wifi <br>C11cj67301</p>
+			<p class="product-prize">$ 782.999 COP</p>
+		</div>
+	</div>
+	</div>	
+	
+	<div id="suscribe-container">
+	<h3 id="suscribe-text">Si!<br>Envíame ofertas exclusivas, ideas únicas de obsequios, tips personalizados<br>
+		para usar mis productos y productos únicos</h3>
+	<div id="suscribe-form">
+		<input type="search" class="form-control" id="suscribe-field" placeholder="Escribe tu email">
+		<button id="suscribe-button">Suscribir ➜</button>
+	</div>
+	<p id="suscribe-footer-text">Tus datos serán tratados de acuerdo a nuestra política de datos</p>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+	</script>
+	<script src="js/home.js"></script>
+	</body>
+	<footer class="page-footer">
+		<p id="footer-text">©2023 Easy Market</p>
+		<a href="#">Privacy policy</a>
+		<a href="#">Terms of use</a>
+		<a href="#">Cookies</a>
+		<a href="#home-header">Subir al inicio ↑</a>
+	</footer>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>EasyMarket</title>
+    <link rel="stylesheet" href="/css/shoppingcart.css">
+</head>
+<p>
+    <div id="home-header">
+            <div id="header-left">
+                <img id="logotipo" src="logo.png" alt="Logotipo">    
+                <h4 id="page-name" onclick="location.href = 'home.html'" style="cursor:pointer">EasyMarket</h4>
+                    
+            </div>
+            <div id="header-center">
+                    <select class="form-select" id="category-select" aria-label="Default select example">
+                            <option selected>Categorías</option>
+                            <option value="1">Celulares</option>
+                            <option value="2">Accesorios Celulares</option>
+                            <option value="3">PC de escritorio</option>
+                            <option value="4">Portátiles</option>
+                            <option value="5">Accesorios para PC</option>
+                        </select>
+                        <input type="search" class="form-control" id="search" placeholder="Encuentra algo">
+                        <img id="search-image" src="/img/search.svg" alt="Search">
+            </div>
+            <div id="header-right">
+                    <button id="help-button" type="button" class="btn btn-secondary">Help</button>
+                    <button id="account-button" onclick="location.href = 'usergestion-create.html'">
+                            <img src="/img/person.svg" alt="Search">
+                            Cuenta
+                    </button>
+                    <button id="kart-button">
+                            <img src="/img/bag.svg" alt="Search">
+                            Shopping
+                    </button>
+                    <button id="pay-button">
+                    <img src="/img/cart3.svg" alt="Search">
+                    Pagar
+                    </button>
+            </div>
+    </div>
+    <br>
+    <div class="category-header">
+            <h3>CHECKOUT</h3>
+            <h3>EL CARRITO:</h3>
+    </div>
+
+</header>
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div id="card-shopping">
+                <img class="img-product" src="https://www.pngplay.com/wp-content/uploads/12/Macbook-Transparent-PNG.png">
+                <h2 class="img-name">
+                    MacBook Air de 13 pulgadas
+                </h2>
+                <h2 class="price">
+                    $ 4'799.000,00
+                </h2>
+            </div>
+            <button class="close" id="close">
+                <img src="img/x-circle.svg" alt="Search">
+            </button>
+        </div>
+        <div class="card-container">
+            <div id="card-shopping2">
+                <img class="img-product" src="https://itechcolombia.co/wp-content/uploads/2022/10/261987_ys8mqf.png">
+                <h2 class="img-name">
+                    iPhone 14 Pro Max 256 GB Morado Oscuro
+                </h2>
+                <h2 class="price">
+                    $ 5'399.000,00
+                </h2>
+            </div>
+            <button class="close" id="close2">
+                <img src="img/x-circle.svg" alt="Search">
+            </button>
+        </div>
+        <div class="card-container">
+            <div id="card-shopping3">
+                <img class="img-product" src="https://www.hp.com/content/dam/sites/worldwide/personal-computers/commercial/laptops/premium-high-performance-laptops/27_AIO-27-white.png">
+                <h2 class="img-name">
+                    Todo en Uno HP 
+                </h2>
+                <h2 class="price">
+                    $ 1'399.000,00
+                </h2>
+            </div>
+            <button class="close" id="close3">
+                <img src="img/x-circle.svg" alt="Search">
+            </button>
+        </div>
+        <div class="card-container">
+            <div id="card-shopping4">
+                <img class="img-product" src="https://mediaserver.goepson.com/ImConvServlet/imconv/32c29f9d0b3bdd0291a47d17830f0681ef33be7b/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_02">
+                <h2 class="img-name">
+                    Impresora Ecotank L3250 Mfp
+                </h2>
+                <h2 class="price">
+                    $  782.999,00
+                </h2>
+            </div>
+            <button class="close" id="close4">
+                <img src="img/x-circle.svg" alt="Search">
+            </button>
+        </div>
+        <div class="final">
+            <h2 id="total">Total: $ 300.000,00</h2>
+            <button id="pay">
+                Pagar
+            </button>
+        </div>
+    </div>     
+    <script src="js/shoppingcart.js"></script>
+</body>
+</html>

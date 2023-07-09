@@ -1,0 +1,139 @@
+* {
+	font-size: medium !important;
+}
+#logotipo {
+	width: 50px;
+	height: 50px;
+}
+body {
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+	background-color: #F5F6F8;
+}
+#home-header {
+	display: flex;
+	background-color: #FFF9F3;
+	padding: 10px 75px 10px 75px;
+	justify-content: space-between;
+    border-radius: 30px;
+}
+#header-left {
+	display: flex;
+	align-items: center;
+}
+#page-name {
+	color: #EB8426;
+	font-size: large !important;
+	font-weight: 700 !important;
+}
+#header-center {
+	display: flex;
+    justify-content: space-around;
+}
+#active-button{
+    padding: 10px;
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	border-radius: 30px;
+}
+#active-button:hover{
+    background-color: #f1efef;
+	transition: all 0.8s linear;
+}
+.active {
+	display: flex;
+	
+}
+.active {
+	margin-top: 2%;
+	text-decoration: none;
+	color: #EB8426;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 2px;
+	transition: background-size .3s;
+}
+.active:hover {
+	background-size: 0% 2px;
+	color:#3e3e3e;
+}
+#inactive-button{
+    padding: 10px;
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	border-radius: 30px;
+}
+#inactive-button:hover{
+    background-color: #EB8426;
+	transition: all 0.8s linear;
+}
+.inactive {
+	display: flex;
+}
+.inactive {
+	margin-top: 2%;
+	text-decoration: none;
+	color: #3e3e3e;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3s;
+}
+.inactive:hover {
+	background-size: 0% 2px;
+    color: #3e3e3e;
+}
+#category-select {
+	width: 80%;
+	background-color: #EB8426;
+	border-radius: 30px;
+	font-size: smaller !important;
+	margin: 0 20px 0 20px;
+}
+.search-user{
+    padding: 10px;
+    display: flex;
+    justify-content: center !important;
+}
+.input-group{
+	display: flex !important;
+    margin-left: 35%;
+    width: 10%;
+    border-radius: 30px;
+}
+#search{
+    width: 10%;
+    display: flex !important;
+    margin: auto;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #fbb977;
+	border: none;
+    color:#3e3e3e;
+	margin-right: 35%;
+}
+#search:hover{
+    background-color: #EB8426;
+	transition: all 0.8s linear;
+}
+.info-user{
+    padding: 10px;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+}
+.input-group2{
+    display: flex !important;
+    margin: auto;
+    width: 50%;
+    border-radius: 30px;
+}
+
